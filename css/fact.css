@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1024px)  {
+    div.container {
+        text-align: center
+    }
+    .container h4{
+        font-family: Arial;
+        text-align: left;
+    }
+    .factHero {
+        text-align: center;
+        background-image: url(../img/factBG1.jpg);
+        background-size:cover;
+        width:100%;
+        height:650px;
+    }
+    .coral-text h4{
+        padding-top: 20px;
+    }
+
+    .pink{
+        background-color: #ffffff;
+        padding-bottom: 50px;
+
+    }
+    .white{
+        background-color: #FAFAFA;
+        padding-bottom: 50px;
+
+    }
+    .fulltext{
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}

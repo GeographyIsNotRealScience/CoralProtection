@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style type="text/css">
+        html,body{
+            background-image: url("img/login1.jpg");
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .password{
+            position:absolute;
+            left:0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 130px;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            opacity: 0.85;
+            /*background-color: #CCCCFF;*/
+            background-image: url(img/login2.jpg);
+            background-size: cover;
+        }
+        .password h1{
+            font-size: 18px;
+            font-family: "Comic Sans MS";
+            color: #ff8040;
+        }
+        .password input{
+            outline-style: none;
+            border: 0px;
+            border-radius: 4px;
+            height: 25px;
+        }
+        .login-btn{
+            background-color: #ff8040;
+            width: 70px;
+            height: 40px;
+            border-radius: 8px;
+            font-family: "Comic Sans MS";
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="password">
+    <div>
+    <h1>User Name:</h1>
+    <input type="text" id="username"><br>
+    <h1>Password:</h1>
+    <input type="password" id="password"><br><br>
+        <button class="login-btn"  onclick="pasuser()">Login</button><br>
+        <img src="img/weblogo2.png" height="95px" width="230">
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    function pasuser() {
+        var name= document.getElementById("username").value
+        var pwd = document.getElementById("password").value
+        if (name.toString()=="username") {
+            if (pwd.toString()=="password") {
+                location.href="index.html"
+            } else {
+                alert("Invalid Password")
+            }
+        } else { alert("Invalid UserID")
+        }
+    }
+
+</script>
+
+</body>
+</html>
