@@ -35,12 +35,12 @@ $(function(){
             return;
         }
         var superContainer = $(this),
-        answers = [],
-        introFob = '<div class="intro-container slide-container"><h1 class="intro-text">Take a quiz of coral knowledge<br><br>See what do you know</h1><a class="nav-start" href="#"><br/><span><img src="'+config.startImg+'"></span></a></div>	',
-        exitFob = '<div class="results-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><br><br><div class="notice"><p class="warning">Pick an answer please~</p></div><div class="progress-keeper" ><div class="progress"></div></div>',
-        contentFob = '',
-        questionsIteratorIndex,
-        answersIteratorIndex;
+            answers = [],
+            introFob = '<div class="intro-container slide-container"><h1 class="intro-text">Take a quiz of coral knowledge<br><br>See what do you know</h1><a class="nav-start" href="#"><br/><span><img src="'+config.startImg+'"></span></a></div>	',
+            exitFob = '<div class="results-container slide-container"><div class="question-number">' + config.endText + '</div><div class="result-keeper"></div></div><br><br><div class="notice"><p class="warning">Pick an answer please~</p></div><div class="progress-keeper" ><div class="progress"></div></div>',
+            contentFob = '',
+            questionsIteratorIndex,
+            answersIteratorIndex;
         superContainer.addClass('main-quiz-holder');
         for (questionsIteratorIndex = 0; questionsIteratorIndex < config.questions.length; questionsIteratorIndex++) {
             contentFob += '<div class="slide-container"><div class="question-number">' + (questionsIteratorIndex + 1) + '/' + config.questions.length + '</div><div class="question">' + config.questions[questionsIteratorIndex].question + '</div><div class="row"><div class="col-md-7 col-sm-7 game-frame"><ul class="answers">';
@@ -61,15 +61,15 @@ $(function(){
         }
         superContainer.html(introFob + contentFob + exitFob);
         var progress = superContainer.find('.progress'),
-        progressKeeper = superContainer.find('.progress-keeper'),
-        notice = superContainer.find('.notice'),
-        progressWidth = progressKeeper.width(),
-        userAnswers = [],
-        questionLength = config.questions.length,
-        slidesList = superContainer.find('.slide-container');
+            progressKeeper = superContainer.find('.progress-keeper'),
+            notice = superContainer.find('.notice'),
+            progressWidth = progressKeeper.width(),
+            userAnswers = [],
+            questionLength = config.questions.length,
+            slidesList = superContainer.find('.slide-container');
         function checkAnswers() {
             var resultArr = [],
-            flag = false;
+                flag = false;
             for (i = 0; i < answers.length; i++) {
                 if (answers[i] == userAnswers[i]) {
                     flag = true;
@@ -108,10 +108,10 @@ $(function(){
         });
         superContainer.find('.nav-start').click(function() {
             $(this).parents('.slide-container').fadeOut(500,
-            function() {
-                $(this).next().fadeIn(500);
-                progressKeeper.fadeIn(500);
-            });
+                function() {
+                    $(this).next().fadeIn(500);
+                    progressKeeper.fadeIn(500);
+                });
             return false;
         });
         superContainer.find('.next').click(function() {
@@ -121,25 +121,25 @@ $(function(){
             }
             notice.hide();
             $(this).parents('.slide-container').fadeOut(500,
-            function() {
-                $(this).next().fadeIn(500);
-            });
+                function() {
+                    $(this).next().fadeIn(500);
+                });
             progress.animate({
-                width: progress.width() + Math.round(progressWidth / questionLength)
-            },
-            500);
+                    width: progress.width() + Math.round(progressWidth / questionLength)
+                },
+                500);
             return false;
         });
         superContainer.find('.prev').click(function() {
             notice.hide();
             $(this).parents('.slide-container').fadeOut(500,
-            function() {
-                $(this).prev().fadeIn(500);
-            });
+                function() {
+                    $(this).prev().fadeIn(500);
+                });
             progress.animate({
-                width: progress.width() - Math.round(progressWidth / questionLength)
-            },
-            500);
+                    width: progress.width() - Math.round(progressWidth / questionLength)
+                },
+                500);
             return false;
         });
         superContainer.find('.final').click(function() {
@@ -166,16 +166,16 @@ $(function(){
             }
             progressKeeper.hide();
             var results = checkAnswers(),
-            resultSet = '',
-            trueCount = 0,
-            shareButton = '',
-            score,
-            url;
+                resultSet = '',
+                trueCount = 0,
+                shareButton = '',
+                score,
+                url;
             if (config.shortURL === null) {
                 config.shortURL = window.location
             };
             for (var i = 0,
-            toLoopTill = results.length; i < toLoopTill; i++) {
+                     toLoopTill = results.length; i < toLoopTill; i++) {
                 if (results[i] === true) {
                     trueCount++;
                     isCorrect = true;
@@ -196,20 +196,20 @@ $(function(){
                 resultSet += '</ul> <div class="separ"></div> <div class="explain">'+ config.questions[i].explain+'</div> </div></div>';
             }
             score = roundReloaded(trueCount / questionLength * 100, 2);
-            
+
             resultSet = '<h2 class="qTitle">' + judgeSkills(score) + '<br/> You get： ' + score + '<br><br> Select results below to see why <br></h2>' + shareButton + '<div class="jquizzy-clear"></div>' + resultSet + '<div class="jquizzy-clear"></div>';
             superContainer.find('.result-keeper').html(resultSet).show(500);
             superContainer.find('.resultsview-qhover').hide();
             superContainer.find('.result-row').hover(function() {
-                $(this).find('.resultsview-qhover').show();
-            },
-            function() {
-                $(this).find('.resultsview-qhover').hide();
-            });
+                    $(this).find('.resultsview-qhover').show();
+                },
+                function() {
+                    $(this).find('.resultsview-qhover').hide();
+                });
             $(this).parents('.slide-container').fadeOut(500,
-            function() {
-                $(this).next().fadeIn(500);
-            });
+                function() {
+                    $(this).next().fadeIn(500);
+                });
             return false;
         });
     };

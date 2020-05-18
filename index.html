@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Save Coral</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
@@ -109,22 +112,7 @@
 
     </style>
 
-    <!--<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-    <script type="text/javascript">
-        function initViz() {
-            var containerDiv = document.getElementById("vizContainer"),
-                url = "https://public.tableau.com/views/CoralReefSpecies/GreatBarrierReef",
-                options = {
-                    hideTabs: true,
-                    onFirstInteractive: function () {
-                        console.log("Run this code when the viz has finished loading.");
-                    }
-                };
 
-            var viz = new tableau.Viz(containerDiv, url, options);
-            // Create a viz object and embed it in the container div.
-        }
-    </script> -->
 
 </head>
 <body class="lang-en">
@@ -136,20 +124,17 @@
         <div id="MagicMenu" class="nav-header">
             <div class="container">
                 <div class="logo float-left">
-                    <a href="#"><img src="img/weblogo2.png" width="140" height="50" alt=""></a>&emsp;&emsp;&emsp;
+                    <a href="#"><img src="img/weblogo2.png" width="140" height="50" alt=""></a>
                 </div>
                 <div class="navbar pull-right">
-                    <a href="#">Home</a>
-                    <a>&emsp;</a>
-                    <a href="fact.html">Coral Reef</a>
-                    <a>&emsp;</a>
-                    <a href="data.html">Threat</a>
-                    <a>&emsp;</a>
-                    <a href="quiz.html">Quiz</a>
-                    <a>&emsp;</a>
-                    <a href="game.html">Game</a>
-                    <a>&emsp;</a>
-                    <a href="aboutus.html">About us</a>
+                    <table><tr>
+                        <td style="padding-left: 10px"><a href=" ">Home</a></td>&emsp;
+                        <td style="padding-left: 30px"><a href="fact.html">Coral Reef</a></td>
+                        <td style="padding-left: 30px"><a href="data.html">Threat</a></td>
+                        <td style="padding-left: 30px"><a href="quiz.html">Quiz</a></td>
+                        <td style="padding-left: 30px"><a href="game.html">Game</a></td>
+                        <td style="padding-left: 30px"><a href="aboutus.html">About us</a></td>
+                    </tr></table>
                 </div>
             </div>
         </div>
@@ -165,7 +150,7 @@
                 <div class="square"
                      style="background-color: rgba(242, 242, 242, 1); background-image:url(img/icon2.jpg);">
                     <i class="fa fa-magic" aria-hidden="true"></i>
-                    <h4>Coral reef</h4>
+                    <h4 style ="font-size: 18px;">Coral reef</h4>
                     <p>Learn more about coral reefs</p>
                 </div>
             </a>
@@ -175,7 +160,7 @@
                 <div class="square"
                      style="background-color: rgba(242, 242, 242, 1); background-image:url(img/icon2.jpg);">
                     <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                    <h4>Threats</h4>
+                    <h4 style ="font-size: 18px;">Threats</h4>
                     <p>See the fragility of the beauty</p>
                 </div>
             </a>
@@ -185,7 +170,7 @@
                 <div class="square"
                      style="background-color: rgba(242, 242, 242, 1); background-image:url(img/icon2.jpg);">
                     <i class="fa fa-map" aria-hidden="true"></i>
-                    <h4>Quiz</h4>
+                    <h4 style ="font-size: 18px;">Quiz</h4>
                     <p>See what do you know about coral</p>
                 </div>
             </a>
@@ -195,7 +180,7 @@
                 <div class="square"
                      style="background-color: rgba(242, 242, 242, 1); background-image:url(img/icon2.jpg);">
                     <i class="fa fa-gamepad" aria-hidden="true"></i>
-                    <h4>Game</h4>
+                    <h4 style ="font-size: 18px;">Game</h4>
                     <p>Little games about protecting coral</p>
                 </div>
             </a>
@@ -220,7 +205,7 @@
                                  onclick="popOut1()"></figure>
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Capnella Imbricata</h4>
+                    <h4 style ="font-size: 18px;">Capnella Imbricata</h4>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -228,7 +213,7 @@
                     <figure><img class="img-fluid" src="img/Heliopora_coerulea.jpg" alt="" onclick="popOut2()"></figure>
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Heliopora Coerulea</h4>
+                    <h4 style ="font-size: 18px;">Heliopora Coerulea</h4>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
@@ -237,7 +222,7 @@
                     </figure>
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Hicksonella Expansa</h4>
+                    <h4 style ="font-size: 18px;">Hicksonella Expansa</h4>
                 </div>
             </div>
         </div>
@@ -249,7 +234,7 @@
                         <figure><img class="img-fluid" src="img/isis_hippuris.jpg" alt="" onclick="popOut4()"></figure>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Isis Hippuris</h4>
+                        <h4 style ="font-size: 18px;">Isis Hippuris</h4>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -258,7 +243,7 @@
                         </figure>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Pinnigorgia Flava</h4>
+                        <h4 style ="font-size: 18px;">Pinnigorgia Flava</h4>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -267,7 +252,7 @@
                         </figure>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Sinunlaria Brassica</h4>
+                        <h4 style ="font-size: 18px;">Sinunlaria Brassica</h4>
                     </div>
                 </div>
             </div>
@@ -279,7 +264,7 @@
                         </figure>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Capnella lacertiliensis</h4>
+                        <h4 style ="font-size: 18px;">Capnella lacertiliensis</h4>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -288,7 +273,7 @@
                         </figure>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Sinularia Flexibilis</h4>
+                        <h4 style ="font-size: 18px;">Sinularia Flexibilis</h4>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -297,7 +282,7 @@
                         </figure>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Paralemnalia Clavata</h4>
+                        <h4 style ="font-size: 18px;">Paralemnalia Clavata</h4>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Coral Information</title>
 
@@ -18,7 +21,7 @@
     <script type="text/javascript">
         function initViz() {
             var containerDiv = document.getElementById("vizContainer"),
-                url = "https://public.tableau.com/views/CoralReefSpecies/GreatBarrierReef",
+                url = "https://public.tableau.com/views/CholorophyllConcentrationinCoralReefs/ChlorophyllConcentrationinCoralReefs",
                 options = {
                     hideTabs: true,
                     onFirstInteractive: function () {
@@ -59,17 +62,14 @@
                     <a href="#"><img src="img/weblogo2.png" width="140" height="50" alt=""></a>&emsp;&emsp;&emsp;
                 </div>
                 <div class="navbar pull-right">
-                    <a href="index.html">Home</a>
-                    <a>&emsp;</a>
-                    <a href="fact.html">Coral Reef</a>
-                    <a>&emsp;</a>
-                    <a href="#">Threat</a>
-                    <a>&emsp;</a>
-                    <a href="quiz.html">Quiz</a>
-                    <a>&emsp;</a>
-                    <a href="game.html">Game</a>
-                    <a>&emsp;</a>
-                    <a href="aboutus.html">About us</a>
+                    <table><tr>
+                        <td style="padding-left: 10px"><a href="index.html">Home</a></td>&emsp;
+                        <td style="padding-left: 30px"><a href="fact.html">Coral Reef</a></td>
+                        <td style="padding-left: 30px"><a href="data.html">Threat</a></td>
+                        <td style="padding-left: 30px"><a href="quiz.html">Quiz</a></td>
+                        <td style="padding-left: 30px"><a href="game.html">Game</a></td>
+                        <td style="padding-left: 30px"><a href="aboutus.html">About us</a></td>
+                    </tr></table>
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@
                     <div class="row">
                         
                             <video width="100%" height="350" controls>
-                        <source src="img/coralVideo2.mp4" type="video/mp4">
+                        <source src="img/threatVideo.mp4" type="video/mp4">
                     </video>
                     </div>
 
@@ -182,26 +182,7 @@
     <div id="vizContainer2" style="width:960px; height:700px; margin:auto"></div>
 </section>
 
-<section  class="polyethylene">
-    <div class="container" >
-        <div class="row">
-            <div class="title">
-                <h6>Plastic pollutions</h6>
-                <p style="margin-top: 10px;">They are hurting coral reefs</p>
-            </div>
-        </div>
-    </div>
-<!--Backend barchart-->
-    <div id="chart-container">
-        <canvas id="chartcanvas" width="960" height="700"></canvas>
-        <div class="coral-text">
-            <h4> Polyethylene is the most widely used plastic type in the world. It is found in shampoo bottles, toys and
-                grocery bags. But this destroys coral tissue, because the bacteria that trigger outbreaks of the disease are
-                good at colonizing plastic. The low-light, low-oxygen conditions created when plastics settle on coral are
-                also hospitable to the microbes that cause black-band disease, another often-lethal condition.</h4>
-        </div>
-    </div>
-</section>
+
 
 <section  class="map">
     <div class="container" >
@@ -212,7 +193,7 @@
             </div>
         </div>
     </div>
-    <div id="vizContainer" style="width:960px; height:700px; margin:auto"></div>
+    <div id="vizContainer" style="width:960px; height:1050px; margin:auto"></div>
 </section>
 
     <script src="js/jquery.min.js"></script>
