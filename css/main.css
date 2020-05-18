@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	font-family: 'Work Sans', sans-serif;
+	/*font-family: 'Work Sans', sans-serif;*/
 	color: #494949;
 	font-size: 13px;
 	line-height: 1.3rem;
@@ -83,7 +83,8 @@ h3 {
 }
 h4 {
 	color: #2C4755;
-	font-size: 14px;;
+	font-size: 14px;
+	font-family: "Comic Sans MS";
 	font-weight: 800;
 	padding-bottom: 5px;
 	letter-spacing: -0.03rem;
@@ -94,23 +95,26 @@ h5 {
 }
 h6 {
 	color: #FFD2D2;
-	font-size: 110px;;
+	font-size: 100px;
+	font-family: "Work Sans";
 	font-weight: 800;
 	letter-spacing: -0.3rem;
 	margin-top: 65px;
 }
 p {
-	font-size: 12px;;
+	font-size: 12px;
+	font-family: "Comic Sans MS";
 	padding-bottom: 10px;
 	letter-spacing: -0.03rem;
 	line-height: 1.3rem;
 }
+
 a {
-		color: #2C4755;
-		font-family: Arial;
-		font-size: 25px;
-		font-weight: 400;
-	}
+	color: #2C4755;
+	font-size: 25px;
+	font-weight: 400;
+	font-family: "Comic Sans MS";
+}
 
 a:hover {
 		color: #ff8040;
@@ -157,6 +161,9 @@ nav {
 .logo {
 	padding-top: 20px;
 }
+.navbar{
+	padding-top: 20px;
+}
 .inner-btn {
 	margin: 30px 0px 25px 50px;
 }
@@ -184,6 +191,17 @@ nav ul li {
 	text-align: center;
 	cursor:pointer;
 }
+.hidden-gallery {
+	display: none;
+
+}
+.separator {
+	width: 100%;
+	height: 2px;
+	background-color: #FFD2D2;
+	margin-bottom: 15px;
+}
+
 /*Navigation icon*/
 .square i {
 	font-size: 45px;
@@ -203,13 +221,17 @@ nav ul li {
 /* Services */
 .title {
 	margin: 0px auto;
-	padding:25px 0px 50px;
+	padding:35px 0px 80px;
+
 }
 .title p {
-	font-size: 17px;
 	text-align: center;
-	padding-top: 15px;
+	font-size: 22px;
+
+	padding-top: 18px;
 }
+
+
 
 .shape {
 	width: 100px;
@@ -291,7 +313,7 @@ a.button2:hover {
 
 /* contact */
 .contact {
-	background-color: #ffffff;
+	background-color: #FAFAFA;
 	padding-bottom: 50px;
 }
 .contact h6 {
@@ -353,16 +375,8 @@ a.button2:hover {
 	h2 {
 		padding: 0px 25px;
 	}
-	.title {
-		margin: 0px auto;
-		padding-top: 250px;
-	}
-	.title p {
-		padding-top: 8px;
-	}
-	h6 {
-		font-size: 80px;
-	}
+
+
 	.service-text {
 		padding-top: 0px;
 		text-align: center;
@@ -416,9 +430,7 @@ a.button2:hover {
 	.inner-btn {
 		margin: 28px 0px 35px 30px;
 	}
-	a {
-    font-size: 35px;
-}
+
 	nav ul {
 		padding: 0px 0px 25px 30px;
 	}
@@ -454,14 +466,7 @@ a.button2:hover {
 	p {
 	    font-size: 14px;
 	}
-	.title {
-		padding:35px 0px 80px;
-		float: left;
-	}
-	.title p {
-		padding-top: 18px;
-		font-size: 22px;
-	}
+
 	.subtitle{
 		padding:5px 0px 5px;
 	}
@@ -473,15 +478,13 @@ a.button2:hover {
 		text-align: left;
 	}
 
-	h6 {
-		font-size: 120px;
-	}
+
 	.service-text i {
     font-size: 45px;
-}
-.service-text p {
-    padding: 0px 50px 30px 70px;
-}
+	}
+	.service-text p {
+		padding: 0px 50px 30px 70px;
+	}
 	.portfolio {
 		padding-bottom: 30px;
 	}
