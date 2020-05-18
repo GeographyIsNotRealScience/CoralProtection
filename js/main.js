@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-//Off Canvas Menu Slide
+//Side Menu Slide
        $(".menu-toggle").click(function() {
            $('nav').toggleClass('nav-hide')
        });
@@ -18,7 +18,7 @@ $(document).ready(function() {
              window.location.hash = target;
            });
          });
-// Extra Portfolio Gallery
+// Extra Coral Hidden Gallery
           $(".show-more-btn").click(function () {
           $(".hidden-gallery").toggle("slow");
           });
@@ -61,3 +61,5 @@ $(document).ready(function() {
        }
        lastScrollTop = st;
    }
+
+
