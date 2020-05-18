@@ -166,6 +166,7 @@ nav {
 	padding-top: 20px;
 }
 .navbar{
+	padding-left: 10px;
 	padding-top: 30px;
 }
 .inner-btn {
@@ -474,7 +475,8 @@ a.button2:hover {
 	}
 	.title {
 		padding:35px 0px 80px;
-		float: left;
+		/*float: left;*/
+		display: inline-block;
 		text-shadow: 5px 5px 5px #eee;
 	}
 	.title p {
