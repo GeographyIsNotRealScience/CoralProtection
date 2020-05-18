@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>fact</title>
+    <title>Coral Information</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- Custom fonts for this template -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,800" rel="stylesheet">
@@ -14,46 +15,45 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/fact.css" rel="stylesheet">
 
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript">
+        function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "https://public.tableau.com/views/CoralReefSpecies/GreatBarrierReef",
+                options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
 
+            var viz = new tableau.Viz(containerDiv, url, options);
+            // Create a viz object and embed it in the container div.
+        }
+    </script>
 </head>
-<body>
+<body class="lang-en" onload="initViz();">
 <header id="one">
-    <nav>
-        <div class="menu-toggle inner-btn float-left">
-            <img src="img/x.svg" alt="Menu">
-        </div>
-        <ul class ="high-menu">
-            <h3>Menu</h3>
-            <li><a href="#two">Introduction</a></li>
-            <li><a href="#three">Coral Formation</a></li>
-            <li><a href="#four">Threats</a></li>
 
-        </ul>
-        <ul class="lower-menu">
-            <h3>Coral Species</h3>
-
-            <li><a href="#five">Capnella Imbricata</a></li>
-            <li><a href="#six">Sinunlaria Brassica</a></li>
-            <li><a href="#seven">More corals</a></li>
-        </ul>
-
-    </nav>
     <!--      -->
     <div class="container">
         <div id="MagicMenu" class="nav-header">
             <div class="container">
                 <div class="logo float-left">
-                    <a href="#one"><img src="img/weblogo2.png" width="140" height="50" alt=""></a>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <a href="#"><img src="img/weblogo2.png" width="140" height="50" alt=""></a>&emsp;&emsp;&emsp;
+                </div>
+                <div class="navbar pull-right">
                     <a href="index.html">Home</a>
                     <a>&emsp;</a>
-                    <a href="#">Fact</a>
-                </div>
-                <div class="menu-toggle float-right">
-                    <img src="img/menu.svg" alt="Menu">
+                    <a href="#">Coral Reef</a>
+                    <a>&emsp;</a>
+                    <a href="data.html">Threat</a>
+                    <a>&emsp;</a>
+                    <a href="quiz.html">Quiz</a>
+                    <a>&emsp;</a>
+                    <a href="game.html">Game</a>
+                    <a>&emsp;</a>
+                    <a href="aboutus.html">About us</a>
                 </div>
             </div>
         </div>
@@ -63,243 +63,210 @@
 
 </header>
 <!--video1-->
-    <section class="pink" id="two">
-        <div class="container" >
-            <div class="row">
-                <div class="title">
-                    <h6>What is Coral Reef</h6>
+
+
+<section class="majorSpecies">
+    <div class="container  no-gutter">
+        <div class="row  no-gutter">
+            <div class="title" style="text-shadow: 5px 5px 5px #eee;">
+                <h6>Major species in AU</h6>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="row">
+                    <div class="title" style="padding: 10px;">
+                        <p>Capnella Imbricata</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="coral-video" style="width: 99%">
+                        <video width="450" height="350" controls>
+                            <source src="img/coralVideo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="coral-text">
+                        <h4> Colour intensity is dependent on light intensity, the higher the intensity of light, the
+                            lighter colour of the coral. They form thick trunks with branches that closely resemble
+                            trees. In stronger currents they form flatter colonies with shorter branches. They are found
+                            on coral reef slopes in clear water from deep to the shallows with strong tidal currents.
+                            Sometimes found in shadier places and on coral rubble in shallow water close to the
+                            shore</h4>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4 coral-img">
-                    <img src="img/sideImg.jpg" height="300" width="250">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="row">
+                    <div class="title" style="padding: 10px">
+                        <p>Sinunlaria Brassica</p>
+                    </div>
                 </div>
-                <div class="col-md-8 col-sm-8 col-xs-8 coral-text">
-                    <h4>Corals are invertebrate animal species which belong to a large group of colourful and fascinating animals called Cnidaria. Each individual coral is called a polyp which live mostly in groups of hundreds to thousands of genetically identical polyps that eventually form a 'colony'.<br><br>
-                        Coral are generally classified as either "hard coral" or "soft coral". There are around 800 known species of hard coral which are also known as the 'reef building' corals. Soft corals, which include seas fans, sea feathers and sea whips, are different from hard coral as they grow wood-like cores for support and fleshy rinds for protection.<br><br>
-                        Coral reefs are the largest living structure on Earth and is the only living structure to be visible from space.</h4>
+                <div class="row">
+                    <div class="coral-video" style="width: 99%">
+                        <video width="450" height="350" controls>
+                            <source src="img/coralVideo2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="coral-text">
+                        <h4>The Cabbage Leather (Sinularia brassica) biggest appeal is that it's both eye-catching and
+                            durable. Sinularia brassica are a unique soft coral. They are some of sought after and the
+                            most attractive corals found in the world's oceans today. They tend to be soft and very
+                            flexible, but they also have a "leathery" feel to them. </h4>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="white" id="three">
-        <div class="container" >
-            <div class="row">
-                <div class="title">
-                    <h6>Why it is important</h6>
-                </div>
-            </div>
-            <div class="row" >
-                <div class="subtitle">
-                    <p>• For Coastal Protection:</p>
-                </div>
-                <div class="fulltext">
-                    <h4>Coral	reefs	are	a	very	effective	for	absorbing	elements	coming	from	the	ocean,	they	absorb	waves
-                    energy	and	contribute	to	environmental	protection	through	the	reduction	of	coastal	erosion.	They
-                    reduce	the	damage	in	case	of	storms,	hurricanes,	and	in	some way,	the	energy	of	tsunamis.
-                    Therefore,	they	protect	both	ecosystems	located	between	the	reefs	and	coasts and	human
-                    settlements located	by	the	sea.</h4>
-                </div>
-            </div>
-            <div class="row" >
-                <div class="subtitle">
-                    <p>• For Habitat:</p>
-                </div>
-                <div class="fulltext">
-                    <h4>
-                        Over	one	million	plant	and	animal	species	are	involved	in	coral	reefs	and	they	hostreceive	more	than
-                        25%	of	all	species	of	marine	life.	It	is	one	of	the	most	important	biodiversity	hotspot	on	earth.
-                    </h4>
-                </div>
-            </div>
-
-            <div class="row" >
-                <div class="subtitle">
-                    <p>• For Food Resource:</p>
-                </div>
-                <div class="fulltext">
-                    <h4>
-                        One	eighth	of	the	world’s	population,	approximately	850	million	people	live	within	100	kilometres
-                        of	coral and	a	large	proportion	of	food	taken	directly	from	the	reef	waters.
-                    </h4>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-    <section class="pink" id="four">
-        <div class="container" >
-            <div class="row">
-                <div class="title">
-                    <h6>Threats</h6>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-8 coral-text">
-                    <h4>
-                        Most coral reefs occur in shallow water near shore.
-                        Regardless of global threats to coral reef such as ocean
-                        acidification, increased ocean temperatures and changing
-                        ocean chemistry. Coral reefs are particularly vulnerable to
-                        the effects of human activities, both through direct
-                        exploitation of reef resources, and through indirect
-                        impacts from adjacent human activities on land and in the
-                        coastal zone.
-                    </h4>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-4 coral-img">
-                    <img src="img/fact1.jpg" width="350" height="295">
-                </div>
-            </div><br><br>
-
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4 coral-img">
-                    <img src="img/fact2.jpg" width="350" height="295">
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-8 coral-text">
-                    <h4>
-                        • Physical damage or destruction from coastal development<br>
-                        • Pollution from land (Main reason)<br>
-                        - Sedimentation from coastal development<br>
-                        - Pathogens from inadequately treated sewage<br>
-                        - Toxic substances, including metals, organic chemicals
-                        and pesticides found in industrial discharges,
-                        sunscreens, etc.<br>
-                        - Trash and micro-plastics from improper disposal, such
-                        as plastic bags and bottles which can snag on corals and
-                        block the sunlight needed for photosynthesis.<br>
-                        • Overfishing<br>
-                        • Coral harvesting<br>
-                    </h4>
-                </div>
+<section class="more">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="title">
+                <h6>What's more</h6>
             </div>
         </div>
-    </section>
 
-    <section class="white" id="five">
-        <div class="container" >
-            <div class="row">
-                <div class="title">
-                    <h6>Major species in AU</h6>
-                    <p>Capnella Imbricata</p>
+
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+
+                <div class="row coral-img">
+                    <img src="img/is1.png" width="80%" height="500" style="margin: auto;">
+
+                </div>
+                <div class="coral-text1">
+
+
+                    <h4 class="coral-text1"> Isis hippuris is a species of bamboo coral found in the Western Pacific
+                        Ocean. It produces hippuristanol, a molecule with apparent anti-cancer functions. Good medicinal
+                        value and weak viability make it very precious. </h4>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-8 coral-video">
-                    <video width="600" height="350" controls>
-                        <source src="img/coralVideo.mp4" type="video/mp4">
-                    </video>
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+                <div class="row coral-img">
+                    <img src="img/he.png" width="80%" height="500" style="margin: auto;">
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-4 coral-text">
-                    <h4> An interesting fact about Leather Corals; is that some will accept a Clownfish, when no other suitable anemone is present. This has been recorded in the wild, not just in captivity. Clownfish have spawned in captivity with a Leather Coral for a host as well.</h4>
+                <div class="coral-text1">
+                    <h4 class="coral-text1">It is the only octocoral known to produce a massive skeleton.As such, it is
+                        fairly abundant within paleontology, with fossils indicating the species has remained unchanged
+                        since the Cretaceous. </h4>
                 </div>
+
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+
+
+                <div class="row coral-img">
+                    <img src="img/hi.png" width="80%" height="500" style="margin: auto;">
+                </div>
+                <div class="coral-text1">
+
+
+                    <h4 class="coral-text1">The main characteristics of separating members of different genera are
+                        distinguished by the degree and type of acupuncture. Other judgment features include branching
+                        pattern and whole adult shape. </h4>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+                <div class="row coral-img">
+                    <img src="img/pi.png" width="80%" height="500" style="margin: auto;">
+                </div>
+                <div class="coral-text1">
+
+
+                    <h4 class="coral-text1"> Pinnigorgia flava is a fast growing gorgonian coral that is a graceful,
+                        thin-branched that can be described as tan to pink in color with similarly colored polyps.</h4>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="map">
+    <div class="container">
+        <div class="row">
+            <div class="title">
+                <h6>Map</h6>
+                <p style="margin-top: 10px;">Find their habitats</p>
             </div>
         </div>
-    </section>
-
-    <section class="pink" id="six">
-        <div class="container" >
-            <div class="row">
-                <div class="title">
-                    <h6>Major species in AU</h6>
-                    <p>Sinunlaria Brassica</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-8 coral-video">
-                    <video width="600" height="350" controls>
-                        <source src="img/coralVideo2.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-4 coral-text">
-                    <h4>The Cabbage Leather (Sinularia brassica) biggest appeal is that it's both eye-catching and durable. Sinularia brassica are a unique soft coral. They are some of sought after and the most attractive corals found in the world's oceans today. They tend to be soft and very flexible, but they also have a "leathery" feel to them. </h4>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="white" id="seven">
-        <div class="container" >
-            <div class="row">
-                <div class="title">
-                    <h6>What's more</h6>
-                    <p>Isis hippuris</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-8 coral-text">
-                    <h4>
-                        Isis hippuris is a species of bamboo coral found in the Western Pacific Ocean. It produces hippuristanol, a molecule with apparent anti-cancer functions. Good medicinal value and weak viability make it very precious.
-                    </h4>
-
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-4 coral-img">
-                    <img src="img/isis1.jpg" width="240" height="210">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="title">
-                    <p>Heliopore coerulea</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4 coral-img">
-                    <img src="img/milk%20tea.png" width="240" height="210">
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-8 coral-text">
-                    <h4>
-                        Heliopore coerulea can resist different environments, so they are often displayed in tropical aquariums.  Southeast Asia and Italy will extract a syrup from it and drink it in pearl milk tea.
-                    </h4>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="title">
-                    <p>Hicksonella expansa</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-8 coral-text">
-                    <h4>
-                        The main characteristics of separating members of different genera are distinguished by the degree and type of acupuncture. Other judgment features include branching pattern and whole adult shape.
-                    </h4>
-
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-4 coral-img">
-                    <img src="img/Hick.jpg" width="240" height="210">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="title">
-                    <p>Pinnigorgia flava</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4 coral-img">
-                    <img src="img/flava.png" width="240" height="210">
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-8 coral-text">
-                    <h4>
-                        Pinnigorgia flava is a fast growing gorgonian coral that is a graceful, thin-branched that can be described as tan to pink in color with similarly colored polyps.
-                    </h4>
-                    </d
-        </div>
-    </section>
+    </div>
+    <div id="vizContainer" style="width:960px; height:700px; margin:auto"></div>
+</section>
 
 <script src="js/jquery.min.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
 
 <script src="js/fact.js"></script>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-col">
+                    <h3 style="color:  rgba(255, 255, 255, 255);font-size: 22px; text-align: center;">ABOUT
+                        SAVECORAL</h3>
+                    <p style="color:  rgba(255, 255, 255, 255); font-size: 20px;text-align: center;line-height: 30px;margin-top: 30px;">
+                        We hope that all corals are valued and protected by reducing marine pollution</p>
+                </div>
+            </div> <!-- end of col -->
+
+            <div class="col-md-4">
+                <div class="footer-col">
+                    <h3 style="color:  rgba(255, 255, 255, 255);font-size: 22px;text-align: center;">CONTACT US</h3>
+                    <div class="row">
+                        <img src="img/footer-icon3.png" width="30px" height="30px"
+                             style="margin-right: 5px;margin-top:30px;">
+                        <h3 style="color:  rgba(255, 255, 255, 255);text-align: center;margin-top: 30px;">South Bank,
+                            VIC,3006</h3>
+                    </div>
+                    <div class="row">
+                        <img src="img/footer-icon2.png" width="30px" height="30px" style="margin-right: 5px;">
+                        <h3 style="color:  rgba(255, 255, 255, 255);text-align: center;">+61 421******</h3>
+                    </div>
+                    <div class="row">
+                        <img src="img/footer-icon4.png" width="30px" height="30px" style="margin-right: 5px;">
+                        <h3 style="color:  rgba(255, 255, 255, 255);text-align: center;">
+                            ysha0023@student.monash.edu</h3>
+                    </div>
+
+
+                </div>
+            </div> <!-- end of col -->
+
+            <div class="col-md-4">
+                <div class="footer-col last" style="text-align: center;">
+                    <div class="row">
+                        <h3 style="color:  rgba(255, 255, 255, 255);font-size: 22px;margin: auto;">SOCIAL MEDIA</h3>
+                    </div>
+                    <div class="row">
+
+                        <img class="footer-img" src="img/footerins.png" width="80px" height="80px"
+                             style="margin: 30px auto 0 auto;" alt=""
+                             onClick="javascript:window.open('https://www.instagram.com/project_blooms_savecoral/','_blank')">
+
+                    </div>
+
+
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row" style="text-align: center;">
+            <h3 style="color:  rgba(255, 255, 255, 255);margin: auto;border-top: 2px dashed rgba(255, 255, 255, 1)">
+                &COPY;Team Project Blooms.All Rights Reserved.</h3>
+        </div>
+    </div> <!-- end of container -->
+</div> <!-- end of footer -->
 
 </body>
 </html>

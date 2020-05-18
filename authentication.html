@@ -5,7 +5,7 @@
     <title>login</title>
     <style type="text/css">
         html,body{
-            background-image: url("img/login1.jpg");
+            background-image: url("img/login1.png");
             background-size: cover;
             height: 100%;
             width: 100%;
@@ -16,49 +16,86 @@
             position:absolute;
             left:0;
             top: 0;
-            bottom: 0;
+            bottom:0;
             right: 0;
-            border-radius: 130px;
-            margin: auto;
-            width: 300px;
-            height: 300px;
+            margin: 300px auto;
+            width: 600px;
+            height: 400px;
             text-align: center;
             opacity: 0.85;
-            /*background-color: #CCCCFF;*/
-            background-image: url(img/login2.jpg);
+            background-color: rgba(22, 24, 24, 1);
+           /* background-image: url(img/login2.jpg);*/
             background-size: cover;
         }
-        .password h1{
+        .password p{
             font-size: 18px;
-            font-family: "Comic Sans MS";
-            color: #ff8040;
+            font-family: "Georgia";
+            color: rgba(255, 255, 255, 255);
         }
         .password input{
             outline-style: none;
             border: 0px;
             border-radius: 4px;
-            height: 25px;
-        }
-        .login-btn{
-            background-color: #ff8040;
-            width: 70px;
             height: 40px;
-            border-radius: 8px;
-            font-family: "Comic Sans MS";
-            font-size: 18px;
+            width: 300px;
         }
+
+        .logbtn {
+           
+            color: rgba(255, 255, 255, 255);
+            width:300px;
+            height: 40px;
+            border-radius: 4px;
+            font-family: "Georgia ";
+            font-size: 18px;
+            width: 100px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .btn-wrap a {
+            -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            display: block;
+            
+            text-decoration: none;
+            border-radius: 2px;
+           
+            font-size: 18px;
+            font-weight: 800;
+        }
+        a.login_btn {
+            height: 40px;
+             font-family: "Georgia ";
+            text-align: center;
+            line-height: 40px;
+            color:rgba(59, 132, 201, 1);
+            box-shadow: rgba(59, 132, 201, 1) 0 0px 0px 1px inset;
+        }
+        a.login_btn:hover {
+             font-family: "Georgia ";
+            color:rgba(255, 255, 255, 255);
+            box-shadow: rgba(59, 132, 201, 1) 0 80px 0px 1px inset;
+        }
+
     </style>
 </head>
 <body>
 
-<div class="password">
+<div class="password" style="padding-top: 80px">
     <div>
-    <h1>User Name:</h1>
+    <p>User Name:</p>
     <input type="text" id="username"><br>
-    <h1>Password:</h1>
+    <p>Password:</p>
     <input type="password" id="password"><br><br>
-        <button class="login-btn"  onclick="pasuser()">Login</button><br>
-        <img src="img/weblogo2.png" height="95px" width="230">
+        <!--<button class="login-btn"  onclick="pasuser()">Login</button><br>-->
+        <div class="logbtn" style="margin:20px auto;">
+                <div class="btn-wrap">
+                    <a href="#" class="login_btn" onclick="pasuser()">Login</a>
+                </div>
+        </div>
 
     </div>
 </div>
