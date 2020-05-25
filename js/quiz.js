@@ -197,7 +197,7 @@ $(function(){
             }
             score = roundReloaded(trueCount / questionLength * 100, 2);
 
-            resultSet = '<h2 class="qTitle">' + judgeSkills(score) + '<br/> You get： ' + score + '<br><br> Select results below to see why <br></h2>' + shareButton + '<div class="jquizzy-clear"></div>' + resultSet + '<div class="jquizzy-clear"></div>';
+            resultSet = '<div class="jquizzy-clear"></div>' + resultSet + '<div class="jquizzy-clear"></div>' + '<h2 class="qTitle">' + judgeSkills(score) + '<br/> You get： ' + score + '<br><br> Select results above to see why <br></h2>';
             superContainer.find('.result-keeper').html(resultSet).show(500);
             superContainer.find('.resultsview-qhover').hide();
             superContainer.find('.result-row').hover(function() {
